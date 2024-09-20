@@ -1,0 +1,24 @@
+# 服务端口的配置
+server:
+  port: 8990
+  context: /
+# 数据库配置
+# "root:mkxiaoer@tcp(127.0.0.1:3306)/ksd-social-db?charset=utf8&parseTime=True&loc=Local", // DSN data source name
+database:
+  mysql:
+    host: 127.0.0.1
+    port: 3306
+    dbname: relesedb
+    username: root
+    password: root
+    config: charset=utf8&parseTime=True&loc=Local
+# nosql数据的配置
+nosql:
+  redis:
+    host: 127.0.0.1:6379
+    password:
+    db: 0
+  es:
+    host: 127.0.0.1
+    port: 9300
+    password: 456
